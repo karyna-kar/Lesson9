@@ -2,7 +2,7 @@
 
 class Stack<T> {
   stack: T[] = [];
-  constructor(...items){
+  constructor(...items: T[]) {
     this.stack = items;
   }
 
@@ -32,7 +32,7 @@ class Stack<T> {
   }
 }
 
-const stack = new Stack<number>();
+const stack = new Stack<number>(6, 7, 9);
 
 stack.push(1);
 stack.push(2);
